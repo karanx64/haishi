@@ -1,0 +1,16 @@
+# caches & state
+.cache/
+**/cache/
+**/state/
+
+# logs
+*.log
+
+# secrets
+.env
+*.key
+*.pem
+
+# system junk
+monitors.xml
+

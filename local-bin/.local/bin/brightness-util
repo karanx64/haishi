@@ -1,0 +1,26 @@
+#!/bin/bash
+
+BUS=$1
+CHANGE=$2
+SLEEP_MULTIPLIER=0.1
+
+if [ -z "$BUS" ] || [ -z "$CHANGE" ]; then
+    echo "Usage: $0 <bus> <+/- amount>"
+    echo "Example: $0 0 +10"
+    exit 1
+fi
+
+#Get current brightness
+CURRENT=$(ddcutil --bus "$BUS" getvcp 10 --terse | cut -d' ' -f4)
+
+#Calculate new brightness
+NEW=$(( CURRENT + CHANGE ))
+
+#Clamp to 0-100 range
+if [ $NEW -lt 0 ]; then NEW=0; fi
+if [ $NEW -gt 100 ]; then NEW=100; fi
+
+#Set new brightness
+ddcutil --bus "$BUS" --sleep-multiplier "$SLEEP_MULTIPLIER" setvcp 10 "$NEW"
+
+echo "Monitor $BUS : $CURRENT -> $NEW"
