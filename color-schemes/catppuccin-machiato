@@ -1,0 +1,12 @@
+| Role             | Color   |
+| ---------------- | ------- |
+| Background       | #24273A |
+| Surface          | #1E2030 |
+| Mantle           | #181926 |
+| Text             | #CAD3F5 |
+| Subtext          | #B8C0E0 |
+| Accent (Primary) | #8AADF4 |
+| Accent (Alt)     | #F5A97F |
+| Success          | #A6DA95 |
+| Error            | #ED8796 |
+| Warning          | #EED49F |
