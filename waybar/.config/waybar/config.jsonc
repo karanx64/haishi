@@ -2,20 +2,20 @@
 {
     // "layer": "top", // Waybar at top layer
     // "position": "bottom", // Waybar position (top|bottom|left|right)
-    "height": 32, // Waybar height (to be removed for auto height)
+    // "height": 32, // Waybar height (to be removed for auto height)
     // "width": 1280, // Waybar width
     "spacing": 2, // Gaps between modules (4px)
     // Choose the order of the modules
     "modules-left": [
-        "hyprland/workspaces",
+        "custom/menu",
         "hyprland/window"
     ],
     "modules-center": [
-        "custom/menu",
-        "wlr/taskbar"
+        "hyprland/workspaces"
     ],
     "modules-right": [
         "pulseaudio",
+        "pulseaudio#microphone",
         "tray",
         "network",
         "cpu",
@@ -91,12 +91,10 @@
     },
     "pulseaudio": {
         // "scroll-step": 1, // %, can be a float
-        "format": "{icon}  {volume}%  {format_source}",
-        "format-bluetooth": "{icon}  {volume}%  {format_source}",
-        "format-bluetooth-muted": "  {icon} {format_source}",
-        "format-muted": "  {format_source}",
-        "format-source": "",
-        "format-source-muted": "󰍭",
+        "format": "{icon}  {volume}%",
+        "format-bluetooth": "{icon}  {volume}%",
+        "format-bluetooth-muted": "  {icon}",
+        "format-muted": "",
         "format-icons": {
             "headphone": "",
             "hands-free": "󰜟",
@@ -112,17 +110,15 @@
         },
         "on-click": "pavucontrol"
     },
+    "pulseaudio#microphone": {
+        "format": "{format_source}",
+        "format-source": "",
+        "format-source-muted": "󰍭",
+        "on-click": "pavucontrol"
+    },
     "custom/power": {
         "format": "⏻",
         "on-click": "wlogout"
-    },
-    "wlr/taskbar": {
-        "all-outputs": true,
-        "format": "{icon}",
-        "icon-size": 18,
-        "tooltip": true,
-        "tooltip-format": "{title}{icon}",
-        "on-click": "activate"
     },
     "custom/menu": {
         "format": "{icon}",
