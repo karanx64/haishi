@@ -53,7 +53,7 @@ window#waybar {
   background-color: @light1;
 }
 #workspaces button.active {
-  background-color: @yellow;
+  background-color: @pink;
   color: @dark1;
 }
 

@@ -116,7 +116,7 @@
             "default": " Menu"
             // "default": "󰣇"
         },
-        "on-click": "fuzzel --show drun",
+        "on-click": "rofi -show drun",
         "tooltip": false
     },
     "custom/swaync-client": {
@@ -129,7 +129,7 @@
         "on-scroll-up": "~/.local/bin/brightness-util 0 10",
         "on-scroll-down": "~/.local/bin/brightness-util 0 -10",
         "tooltip": false,
-        "format-alt": "scroll to adjust brightness"
+        "on-click": "pkill hyprsunset || hyprsunset"
     },
     "mpris": {
         "format": " {status_icon}  {title}  {player_icon} ",
