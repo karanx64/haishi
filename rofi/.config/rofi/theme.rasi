@@ -66,7 +66,7 @@ entry {
 
 listview {
     background-color: transparent;
-    spacing: 6px;
+    spacing: 0px;
     scrollbar: false;
     columns: 1;
     lines: 8;
@@ -78,8 +78,7 @@ element {
     border-radius: 100px;
 }
 element-icon {
-    size: 48px;
-    margin: 0px 10px 0px 0px;
+    size: 32px;
     background-color:@dark1;
     border-radius:100px;
     padding:10px;
@@ -88,6 +87,7 @@ element selected.normal {
     background-color: @blue2;
     text-color: @dark1;
 }
+
 element normal.normal, element alternate.normal{
     background-color: @dark1;
 }
