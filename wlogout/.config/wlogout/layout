@@ -1,0 +1,20 @@
+{
+    "label": "shutdown",
+    "action": "systemctl poweroff",
+}
+{
+    "label": "reboot",
+    "action": "systemctl reboot",
+}
+{
+    "label": "logout",
+    "action": "hyprctl dispatch exit",
+}
+{
+    "label": "suspend",
+    "action": "playerctl pause && systemctl suspend && hyprlock",
+}
+{
+    "label": "lock",
+    "action": "hyprlock",
+}
