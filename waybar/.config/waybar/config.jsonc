@@ -7,11 +7,10 @@
     "spacing": 2, // Gaps between modules (4px)
     // Choose the order of the modules
     "modules-left": [
-        "hyprland/window"
+        "custom/menu",
+        "hyprland/workspaces"
     ],
     "modules-center": [
-        "custom/menu",
-        "hyprland/workspaces",
         "mpris"
     ],
     "modules-right": [
@@ -107,13 +106,13 @@
     },
     "custom/power": {
         "format": " ⏻ ",
-        "on-click": "wlogout",
+        "on-click": "wlogout -b 5",
         "tooltip": false
     },
     "custom/menu": {
-        "format": " {icon} ",
+        "format": "{icon}",
         "format-icons": {
-            "default": " Menu"
+            "default": ""
             // "default": "󰣇"
         },
         "on-click": "rofi -show drun",

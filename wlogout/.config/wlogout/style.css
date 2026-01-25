@@ -1,0 +1,45 @@
+@import "./nord.css";
+
+* {
+  background-image: none;
+  box-shadow: none;
+  box-shadow: 0px 0px;
+}
+
+window {
+  background-color: rgba(46, 52, 64, 0.8);
+}
+button {
+  background-color: @dark2;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 35%;
+  border-radius: 0px;
+  margin: 182px 0px;
+  border: 0px;
+}
+
+button:focus,
+button:active,
+button:hover {
+  background-color: @dark4;
+  outline-style: none;
+}
+
+#shutdown {
+  border-radius: 20px 0 0 20px;
+  background-image: image(url("./icons/nord/shutdown.png"));
+}
+#lock {
+  border-radius: 0 20px 20px 0;
+  background-image: image(url("./icons/nord/lock.png"));
+}
+#reboot {
+  background-image: image(url("./icons/nord/reboot.png"));
+}
+#logout {
+  background-image: image(url("./icons/nord/logout.png"));
+}
+#suspend {
+  background-image: image(url("./icons/nord/suspend.png"));
+}
