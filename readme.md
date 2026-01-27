@@ -1,1 +1,1 @@
-#dotfiles
+# *dotfiles* for (hyprland + cachyOS = haishi setup )
