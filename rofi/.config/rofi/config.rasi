@@ -5,7 +5,7 @@ configuration {
     show-icons: true;
     drun-show-actions: false;
     drun-use-desktop-cache: true;
-    drun-reload-desktop-cache: false;
+    drun-reload-desktop-cache: true;
     matching: "normal";
     drun-categories: "";
     display-drun:"";
