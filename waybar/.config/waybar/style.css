@@ -1,4 +1,4 @@
-@import "./nord.css";
+@import "./mocha.css";
 
 * {
   border: none;
@@ -6,115 +6,171 @@
   font-family: JetBrainsMono Nerd Font Propo;
   font-size: 14px;
   font-style: normal;
-  min-height: 0;
   transition: all 0s;
+  min-width: 8px;
+  min-height: 0px;
+  color: @text;
 }
 
 window#waybar {
-  background: rgba(0, 0, 0, 0);
-  color: @light1;
-  border-radius: 100px;
+  background: @crust-o;
 }
 
 /* COMMON */
-#window,
-#workspaces,
-#mpris,
-#pulseaudio,
-#wireplumber,
-#tray,
-#clock,
-#power-profiles-daemon,
-#custom-power,
+
+#waybar > *{
+  padding:4px 0;
+}
+
+
+#bluetooth,
 #custom-swaync-client,
+#clock,
+#network,
+#power-profiles-daemon,
 #custom-brightness,
-#custom-menu {
-  padding: 0px 12px;
-  margin: 2px;
-  border-radius: 100px;
-  color: @light1;
-  background-color: @dark3;
+#tray, 
+#pulseaudio,
+#mpris,
+#pulseaudio-slider,
+#workspaces,
+#window,
+#custom-power{
   font-weight: 500;
+  margin: 10px 0;
 }
 
-/* WORKSPACES */
-#workspaces {
+
+/* window - icon */
+#window{
+  margin-right: -12px;
+  margin-left: 11px;
+}
+
+
+#pulseaudio-slider {
+    padding: 0;
+    margin: 10px 0 10px 0;
+}
+#pulseaudio-slider slider {
+    opacity: 1;
+    background-image: none;
+    border: none;
+    box-shadow: none;
+    background-color: @text;
+    border-radius:50%;
+}
+#pulseaudio-slider trough {
+    min-height: 80px;
+    min-width: 10px;
+    border-radius: 10px;
+    background: @text-o;
+}
+#pulseaudio-slider highlight {
+    min-width: 10px;
+    border-radius: 5px;
+    background: @mauve;
+}
+
+
+#custom-swaync-client:hover{
+    color: @peach;
+}
+
+
+
+#network:hover{
+  color: @green;
+}
+#network.disabled:hover{
+  color: @subtext0;
+}
+#network.disconnected:hover{
+  color: @red;
+}
+
+
+
+
+#power-profiles-daemon.performance:hover{
+  color: @red;
+}
+#power-profiles-daemon.balanced:hover{
+  color: @sapphire;
+}
+#power-profiles-daemon.power-saver:hover{
+  color: @green;
+}
+
+
+
+#custom-brightness:hover{
+  color: @yellow;
+}
+
+#tray {
+  background-color: @crust-o;
   padding: 4px;
+  margin: 4px;
+  border-radius: 10px
 }
-#workspaces button {
-  border-radius: 100px;
-  padding: 4px 2px;
-  margin: 0 3px;
-  background-color: @dark4;
-  color: @light1;
-}
-#workspaces button:hover {
-  color: @dark1;
-  background-color: @light1;
-}
-#workspaces button.active {
-  background-color: @pink;
-  color: @dark1;
+#tray *{
+  margin: 4px 0;
 }
 
-/* MENU */
-#custom-menu {
-  background-color: @green;
-  color: @dark1;
+
+#pulseaudio:hover{
+  color: @mauve;
+}
+#mpris:hover{
+  color: @mauve;
 }
 
-/* MPRIS */
-#mpris {
-  background-color: @blue3;
-  color: @dark1;
+
+#clock{
+  font-size: 18px;
+  font-weight: 900;
+  color: @text;
+  background-color: @crust-o;
+  padding: 2px 4px;
+  margin:0 4px;
+  border-radius: 10px
+}
+#clock:hover{
+  color: @mauve;
+}
+#custom-power:hover{
+  color: @red;
 }
 
-/* pulseaudio */
-
-#pulseaudio {
-  background-color: @dark3;
-  color: @light3;
+#workspaces{
+  color: @text;
+  background-color: @crust-o;
+  padding: 4px;
+  margin:0 4px;
+  border-radius: 10px
 }
 
-/* custom-brightness */
 
-#custom-brightness {
-  background-color: @yellow;
-  color: @dark1;
+#workspaces button{
+  border-radius: 10px;
+  margin-bottom: 4px;
+  /* background-color: red; */
+  font-weight: 900;
 }
-
-#tray menu {
-  background-color: @dark1;
-  color: @light1;
-  border-radius: 12.6px;
-  border-color: transparent;
+#workspaces button:last-child{
+  margin-bottom: 0;
 }
 
-#clock {
-  background-color: @blue1;
-  color: @dark1;
+#workspaces button:hover label{
+  color: @mauve;
 }
 
-#power-profiles-daemon {
-  color: @dark1;
+#workspaces button.active label{
+  color:@mauve;
 }
-#power-profiles-daemon.performance {
-  background-color: @red;
-}
-
-#power-profiles-daemon.balanced {
-  background-color: @green;
-}
-#power-profiles-daemon.power-saver {
-  background-color: @yellow;
+#workspaces button.active{
+  background-color: @text-o;
 }
 
-#custom-power:hover {
-  background-color: @red;
-  color: @dark1;
-}
-#custom-swaync-client:hover {
-  font-weight: 800;
-  background-color: @blue3;
-  color: @dark1;
-}
+#bluetooth{}
