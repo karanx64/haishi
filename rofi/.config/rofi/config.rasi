@@ -9,6 +9,7 @@ configuration {
     matching: "normal";
     drun-categories: "";
     display-drun:"";
+    drun-display-format: "{name}";
 }
 textbox-prompt-colon {
     enabled: false;
