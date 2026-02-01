@@ -22,7 +22,6 @@ $python\
 [](fg:green bg:sapphire)\
 $conda\
 [ ](fg:sapphire)\
-$cmd_duration\
 $line_break\
 $character"""
 

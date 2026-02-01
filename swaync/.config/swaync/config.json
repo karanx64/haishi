@@ -33,6 +33,7 @@
   "script-fail-notify": true,
 
   "widgets": [
+    "mpris",
     "inhibitors",
     "title",
     "notifications",
