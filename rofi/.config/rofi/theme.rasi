@@ -1,57 +1,66 @@
 *{
-    dark1:   #2e3440;
-    dark2:   #3b4252;
-    dark3:   #434c5e;
-    dark4:   #4c566a;
-    light1:  #d8dee9;
-    light2:  #e5e9f0;
-    light3:  #eceff4;
-    blue1:   #8fbcbb;
-    blue2:   #88c0d0;
-    blue3:   #81a1c1;
-    blue4:   #5e81ac;
-    red:     #bf616a;
-    orange:  #d08770;
-    yellow:  #ebcb8b;
-    green:   #a3be8c;
-    pink:    #b48ead;
+    rosewater: #f5e0dc;
+    flamingo: #f2cdcd;
+    pink: #f5c2e7;
+    mauve: #cba6f7;
+    red: #f38ba8;
+    maroon: #eba0ac;
+    peach: #fab387;
+    yellow: #f9e2af;
+    green: #a6e3a1;
+    teal: #94e2d5;
+    sky: #89dceb;
+    sapphire: #74c7ec;
+    blue: #89b4fa;
+    lavender: #b4befe;
+    text: #cdd6f4;
+    subtext1: #bac2de;
+    subtext0: #a6adc8;
+    overlay2: #9399b2;
+    overlay1: #7f849c;
+    overlay0: #6c7086;
+    surface2: #585b70;
+    surface1: #45475a33;
+    surface0: #313244;
+    base: #1e1e2e33;
+    mantle: #181825;
+    crust: #11111b;
 
-    background:   @dark1;
-    foreground:   @light2;
-    border-color: @dark4;
-    separatorcolor: transparent;
-    selected-background: @blue4;
-    selected-foreground: @light3;
+    background:            @base;
+    foreground:            @text;
+    border-color:          @surface2;
+    separatorcolor:        transparent;
+    selected-background:   @mauve;
+    selected-foreground:   @crust;
 
     font: "JetBrainsMono Nerd Font Propo 13";
 }
 
 window {
-    background-color: @dark1;
+    background-color: @base;
     border: 2px;
-    border-color: @blue2;
+    border-color: @mauve;
     border-radius: 12.6px;
     padding: 10px;
-    width:420px;
+    width: 420px;
 }
 
 mainbox {
     spacing: 20px;
     padding: 0px;
-        children: [ inputbar, message, listview ];
-
+    children: [ inputbar, message, listview ];
 }
 
 message {
-    color: @dark1;
+    color: @crust;
     padding: 5;
-    border-color: @foreground;
-    border:  0px 2px 2px 2px;
-    background-color: @blue1;
+    border: 0px 2px 2px 2px;
+    border-color: @surface2;
+    background-color: @sapphire;
 }
 
 inputbar {
-    background-color: @dark2;
+    background-color: @base;
     border-radius: 100px;
     padding: 8px;
     spacing: 8px;
@@ -59,9 +68,9 @@ inputbar {
 
 entry {
     background-color: transparent;
-    text-color: @light3;
+    text-color: @text;
     cursor: text;
-    placeholder:"";
+    placeholder: "";
 }
 
 listview {
@@ -70,27 +79,27 @@ listview {
     scrollbar: false;
     columns: 1;
     lines: 8;
-
 }
+
 element {
     background-color: transparent;
     padding: 8px 10px;
     border-radius: 100px;
 }
+
 element-icon {
     size: 32px;
-    background-color:@dark1;
-    border-radius:100px;
-    padding:10px;
+    background-color: @surface1;
+    border-radius: 100px;
+    padding: 10px;
 }
+
 element selected.normal {
-    background-color: @blue2;
-    text-color: @dark1;
+    background-color: @blue;
+    text-color: @crust;
 }
 
-element normal.normal, element alternate.normal{
-    background-color: @dark1;
+element normal.normal,
+element alternate.normal {
+    background-color: transparent;
 }
-
-
-
