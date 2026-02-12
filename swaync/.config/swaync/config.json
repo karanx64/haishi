@@ -62,9 +62,8 @@
       "text": "Label Text"
     },
     "mpris": {
-      "autohide": true,
       "loop-carousel": true,
-      "show-album-art": "never"
+      "blacklist": ["playerctl"]
     }
   }
 }

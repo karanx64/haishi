@@ -127,3 +127,10 @@ export FZF_DEFAULT_OPTS=" \
 --color=selected-bg:#45475A \
 --color=border:#6C7086,label:#CDD6F4"
 
+
+# fnm
+FNM_PATH="/home/main/.local/share/fnm"
+if [ -d "$FNM_PATH" ]; then
+  export PATH="$FNM_PATH:$PATH"
+  eval "`fnm env`"
+fi

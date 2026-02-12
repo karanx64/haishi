@@ -277,60 +277,7 @@ scrollbar trough {
 }
 
 /* mpris */
-.widget-mpris-player {
-    opacity: 0.5;
 
-}
-.widget-mpris-player {
-  background: #31324450;
-  border-radius: 12.6px;
-  color: #cdd6f4;
-}
-
-.mpris-overlay {
-  background-color: #313244;
-  opacity: 0.9;
-  padding: 15px 10px;
-}
-
-.widget-mpris-album-art {
-  -gtk-icon-size: 100px;
-  border-radius: 12.6px;
-  margin: 0 10px;
-}
-
-.widget-mpris-title {
-  font-size: 1.2rem;
-  color: #cdd6f4;
-}
-
-.widget-mpris-subtitle {
-  font-size: 1rem;
-  color: #bac2de;
-}
-
-.widget-mpris button {
-  border-radius: 12.6px;
-  color: #cdd6f4;
-  margin: 0 5px;
-  padding: 2px;
-}
-
-.widget-mpris button image {
-  -gtk-icon-size: 1.8rem;
-}
-
-.widget-mpris button:hover {
-  background-color: #31324450;
-}
-
-.widget-mpris button:active {
-  background-color: #45475a50;
-}
-
-.widget-mpris button:disabled {
-  opacity: 0.5;
-}
 
 .widget-menubar > box > .menu-button-bar > button > label {
   font-size: 3rem;
