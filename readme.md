@@ -9,32 +9,32 @@
 # SHOWCASE
 
 - desktop
-  ![](../56afe6d7/desktop_pink_floyd.png)
+  ![image alt](https://github.com/karanx64/haishi/blob/a1bc6a04b6d43045b641d576f75e10a4c16b3cca/assets/desktop_pink_floyd.png)
 
 - fastfetch (kitty)
-  ![](../36fa8252/kitty_fastfetch.png)
+  ![image alt](https://github.com/karanx64/haishi/blob/a1bc6a04b6d43045b641d576f75e10a4c16b3cca/assets/kitty_fastfetch.png)
 
 ```
 **cachyos** text used in fastfetch config file has 2 variants. 1 white, 1 colored.
 ```
 
 - rofi
-  ![](../31cdbba/rofi.png)
+  ![image alt](https://github.com/karanx64/haishi/blob/a1bc6a04b6d43045b641d576f75e10a4c16b3cca/assets/rofi.png)
 
 - nautilus & zed code editor
-  ![](../49c393a3/nautilus_and_zed.png)
+  ![image alt](https://github.com/karanx64/haishi/blob/a1bc6a04b6d43045b641d576f75e10a4c16b3cca/assets/nautilus_and_zed.png)
 
 - spotify (themed with spicetify)
-  ![](../97782c6d/spotify_spicetify.png)
+  ![image alt](https://github.com/karanx64/haishi/blob/a1bc6a04b6d43045b641d576f75e10a4c16b3cca/assets/spotify_spicetify.png)
 
 - swaync (desktop notifications)
-  ![](../7d62305f/swaync.png)
+  ![image alt](https://github.com/karanx64/haishi/blob/a1bc6a04b6d43045b641d576f75e10a4c16b3cca/assets/swaync.png)
 
 - swaync (notification center)
-  ![](../479a33b2/swaync_center.png)
+  ![image alt](https://github.com/karanx64/haishi/blob/a1bc6a04b6d43045b641d576f75e10a4c16b3cca/assets/swaync_center.png)
 
 - waybar (vertiacl)
-  ![](../d2c75eba/waybar_2.png)
+  ![image alt](https://github.com/karanx64/haishi/blob/a1bc6a04b6d43045b641d576f75e10a4c16b3cca/assets/waybar_2.png)
 
 - wlogout
-  ![](../a9398e69/wlogout.png)
+  ![image alt](https://github.com/karanx64/haishi/blob/a1bc6a04b6d43045b641d576f75e10a4c16b3cca/assets/wlogout.png)
