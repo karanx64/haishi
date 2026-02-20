@@ -1,0 +1,41 @@
+<svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+	<defs>
+		<linearGradient id="g1" x2="1" gradientUnits="userSpaceOnUse" gradientTransform="matrix(-0.748,-77.119,77.119,-0.748,429.377,340.496)">
+			<stop offset="0" stop-color="#89b4fa"/>
+			<stop offset=".335" stop-color="#89dceb"/>
+			<stop offset="1" stop-color="#94e2d5"/>
+		</linearGradient>
+		<linearGradient id="g2" x2="1" gradientUnits="userSpaceOnUse" gradientTransform="matrix(-0.446,59.998,-59.998,-0.446,412.222,178.224)">
+			<stop offset="0" stop-color="#f9e2af"/>
+			<stop offset="1" stop-color="#a6e3a1"/>
+		</linearGradient>
+		<linearGradient id="g3" x2="1" gradientUnits="userSpaceOnUse" gradientTransform="matrix(-0.67,-29.993,29.993,-0.67,410.339,116.331)">
+			<stop offset="0" stop-color="#fab387"/>
+			<stop offset="1" stop-color="#eba0ac"/>
+		</linearGradient>
+	</defs>
+	<style>
+		.s0 { fill: url(#g1) } 
+		.s1 { fill: url(#g2) } 
+		.s2 { fill: url(#g3) } 
+		.s3 { fill: #cba6f7 } 
+		.s4 { fill: #89b4fa } 
+		.s5 { fill: #89dceb } 
+		.s6 { fill: #94e2d5 } 
+		.s7 { fill: #a6e3a1 } 
+		.s8 { fill: #f9e2af } 
+		.s9 { fill: #fab387 } 
+		.s10 { fill: #eba0ac } 
+	</style>
+	<path id="Shape 10 copy" fill-rule="evenodd" class="s0" d="m467.46 263c21.32-0.06 38.61 17.13 38.66 38.46 0.06 21.32-17.13 38.61-38.45 38.66-21.33 0.06-38.61-17.13-38.67-38.45-0.06-21.33 17.13-38.61 38.46-38.67z"/>
+	<path id="Shape 10 copy 2" fill-rule="evenodd" class="s1" d="m352 207.78c0.12-16.59 13.63-29.9 30.22-29.78 16.59 0.12 29.9 13.63 29.78 30.22-0.12 16.59-13.63 29.9-30.22 29.78-16.59-0.12-29.9-13.63-29.78-30.22z"/>
+	<path id="Shape 10" fill-rule="evenodd" class="s2" d="m440 100.67c0.18 8.29-6.37 15.14-14.67 15.33-8.29 0.18-15.14-6.37-15.33-14.67-0.18-8.29 6.37-15.14 14.67-15.33 8.29-0.18 15.14 6.37 15.33 14.67z"/>
+	<path id="Shape 1" fill-rule="evenodd" class="s3" d="m361.05 451.12h-243.35l-30-53.31 302.83 0.01z"/>
+	<path id="Shape 2" fill-rule="evenodd" class="s4" d="m422.23 343.36l-31.69 54.45h-302.82l-32.7-54.45z"/>
+	<path id="Shape 3" fill-rule="evenodd" class="s5" d="m28.66 295.44h115.31l27.75 47.92h-116.68z"/>
+	<path id="Shape 4" fill-rule="evenodd" class="s6" d="m1.22 248.76h117.45l25.35 46.7-115.36-0.02z"/>
+	<path id="Shape 5" fill-rule="evenodd" class="s7" d="m1.21 248.76l22.84-42.23h119.19l-24.59 42.23z"/>
+	<path id="Shape 6" fill-rule="evenodd" class="s8" d="m24.05 206.58l29.13-48.59h118.66l-28.6 48.53z"/>
+	<path id="Shape 7" fill-rule="evenodd" class="s9" d="m53.19 157.97l27.33-47.85 246.45 0.03-28.66 47.84z"/>
+	<path id="Shape 8" fill-rule="evenodd" class="s10" d="m112.48 54.05l-32 56.09h246.53l32.35-56.09z"/>
+</svg>
