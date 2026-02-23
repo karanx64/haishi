@@ -15,6 +15,7 @@
   ![image alt](https://github.com/karanx64/haishi/blob/a1bc6a04b6d43045b641d576f75e10a4c16b3cca/assets/kitty_fastfetch.png)
 
   ![image alt](https://github.com/karanx64/haishi/blob/7d624fcb8e081e4778157260c648ba3838a374c2/assets/kitty_fastfetch_2.png)
+
 ```
 **cachyos** text used in fastfetch config file has 2 variants. 1 white, 1 colored.
 ```
@@ -39,3 +40,6 @@
 
 - wlogout
   ![image alt](https://github.com/karanx64/haishi/blob/a1bc6a04b6d43045b641d576f75e10a4c16b3cca/assets/wlogout.png)
+
+- hyprlock
+  ![image alt](https://github.com/karanx64/haishi/blob/f86d52c077effedf9bb6b51055d1ff7ab4a9c897/assets/hyprlock.png)
