@@ -14,6 +14,8 @@
 - fastfetch (kitty)
   ![image alt](https://github.com/karanx64/haishi/blob/a1bc6a04b6d43045b641d576f75e10a4c16b3cca/assets/kitty_fastfetch.png)
 
+  ![image alt](https://github.com/karanx64/haishi/blob/a1bc6a04b6d43045b641d576f75e10a4c16b3cca/assets/kitty_fastfetch_2.png)
+
 ```
 **cachyos** text used in fastfetch config file has 2 variants. 1 white, 1 colored.
 ```
