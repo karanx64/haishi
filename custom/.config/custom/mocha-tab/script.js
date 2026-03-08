@@ -38,7 +38,8 @@ function loadLocalLinks() {
     a.target = "_blank";
 
     const card = document.createElement("div");
-    card.className = "card";
+    card.className = "card local-card";
+    card.dataset.port = service.port;
 
     const icon = document.createElement("span");
     icon.textContent = service.icon;
@@ -54,7 +55,19 @@ function loadLocalLinks() {
 
     a.appendChild(card);
     localContainer.appendChild(a);
+
+    checkPort(service, card);
   });
+}
+
+function checkPort(service, card) {
+  fetch(`http://localhost:${service.port}`, { mode: "no-cors" })
+    .then(() => {
+      card.classList.add("active");
+    })
+    .catch(() => {
+      card.classList.add("inactive");
+    });
 }
 
 loadLocalLinks();
@@ -109,3 +122,10 @@ document.addEventListener("keydown", (e) => {
     searchInput.focus();
   }
 });
+
+const hintItems = document.querySelectorAll(".hint-block ul li");
+
+for (let i = 1; i < hintItems.length; i += 2) {
+  hintItems[i].style.backgroundColor = "var(--ctp-mocha-surface0)";
+  console.log(hintItems[i]);
+}

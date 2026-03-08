@@ -9,7 +9,7 @@ const LINKS = [
     icon: "",
     name: "Gmail",
     url: "https://mail.google.com/mail/u/2/#inbox",
-    color: "var(--ctp-mocha-green)",
+    color: "var(--ctp-mocha-sky)",
   },
   {
     icon: "",
