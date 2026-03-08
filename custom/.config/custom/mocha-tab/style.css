@@ -26,7 +26,11 @@
   --ctp-mocha-mantle: #181825;
   --ctp-mocha-crust: #11111b;
 }
-
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 body {
   margin: 0;
   height: 100vh;
@@ -55,13 +59,16 @@ body {
 
 .search-box {
   width: 420px;
+  display: flex;
+  gap: 10px;
+  align-items: center;
 }
 
 .search-box input {
   width: 100%;
   padding: 14px;
 
-  border-radius: 10px;
+  border-radius: 999px;
   border: none;
   outline: none;
 
@@ -99,6 +106,43 @@ body {
   display: flex;
   align-items: center;
   gap: 10px;
+  position: relative;
+}
+.card[data-port]:hover::before {
+  content: attr(data-port);
+  position: absolute;
+
+  background: var(--ctp-mocha-surface1);
+  color: var(--ctp-mocha-text);
+
+  padding: 4px 10px;
+  border-radius: 999px;
+  border: 2px solid var(--ctp-mocha-mauve);
+
+  font-size: 0.75rem;
+
+  transform: translateY(-140%);
+}
+
+.local-card::after {
+  content: "";
+  position: absolute;
+
+  top: 8px;
+  right: 8px;
+
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+
+  background: var(--ctp-mocha-overlay0);
+}
+.local-card.active::after {
+  background: var(--ctp-mocha-green);
+}
+
+.local-card.inactive::after {
+  background: var(--ctp-mocha-red);
 }
 
 .card:hover {
@@ -108,11 +152,66 @@ body {
 }
 
 .section-title {
-  font-size: 14px;
+  font-size: 0.9rem;
   color: var(--ctp-mocha-subtext0);
-  margin-top: 10px;
+  margin-top: 20px;
 }
 
 .card-icon {
   font-size: 30px;
+}
+
+.hint-block {
+  width: 400px;
+  padding: 30px;
+  border: 2px solid var(--ctp-mocha-mauve);
+  border-radius: 12px;
+  position: absolute;
+  right: 24px;
+  bottom: 24px;
+  display: block;
+  background-color: var(--ctp-mocha-base);
+  transition: all 0.2s;
+  opacity: 0;
+  transform: translateY(10px);
+  pointer-events: none;
+
+  transition:
+    opacity 0.2s ease,
+    transform 0.2s ease;
+}
+
+.hint-block ul li {
+  display: flex;
+  gap: 30px;
+  list-style: none;
+  justify-content: space-between;
+  padding: 6px 10px;
+  border-radius: 999px;
+}
+
+.hint-container {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.hint-container:hover .hint-block {
+  opacity: 1;
+  transform: translateY(0);
+  pointer-events: auto;
+}
+
+.hint {
+  cursor: pointer;
+  font-size: 24px;
+  align-self: flex-end;
+  transition: all 0.2s;
+  color: var(--ctp-mocha-surface0);
+}
+.hint:hover {
+  color: var(--ctp-mocha-mauve);
+  transition: all 0.2s;
 }
