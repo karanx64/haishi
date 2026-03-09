@@ -4,7 +4,7 @@
 
 ## a lot of things are hard coded.
 
-## use these dotfiles with your own risk. and only use them if you know what you are doing.
+## use these dotfiles at your own risk. and only use them if you know what you are doing.
 
 # SHOWCASE
 
@@ -43,3 +43,7 @@
 
 - hyprlock
   ![image alt](https://github.com/karanx64/haishi/blob/f86d52c077effedf9bb6b51055d1ff7ab4a9c897/assets/hyprlock.png)
+
+- mocha tab (custom newtab/startpage) for chromium
+  ![image alt](https://github.com/karanx64/haishi/blob/fd5f8a77feae976ddc7f0466d9e94e57da605032/assets/mocha-tab-1.png)
+  ![image alt](https://github.com/karanx64/haishi/blob/fd5f8a77feae976ddc7f0466d9e94e57da605032/assets/mocha-tab-2.png)
