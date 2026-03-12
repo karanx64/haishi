@@ -1,0 +1,137 @@
+set $mod Mod4
+
+### Programs
+set $terminal kitty
+set $fileManager nautilus
+set $menu pkill rofi || rofi -show drun
+set $editor vscodium
+set $browser flatpak run io.github.ungoogled_software.ungoogled_chromium
+
+### Monitor
+output HDMI-A-1 resolution 1920x1080@100Hz position 0 0
+
+### Gaps
+gaps inner 4
+gaps outer 8
+
+### Borders
+default_border pixel 2
+default_floating_border pixel 2
+
+### Startup
+exec_always swaync
+exec_always waybar
+exec_always udiskie --tray=false
+exec_always wl-paste --type text --watch cliphist store
+exec_always wl-paste --type image --watch cliphist store
+exec_always wl-clip-persist --clipboard regular
+exec_always waypaper --restore
+
+
+
+### Input
+input type:keyboard {
+    xkb_layout us
+}
+
+input type:pointer {
+    accel_profile flat
+}
+
+### Floating rules
+for_window [app_id="org.gnome.Calculator"] floating enable
+for_window [app_id="nm-connection-editor"] floating enable
+for_window [app_id="org.pulseaudio.pavucontrol"] floating enable
+for_window [title="Picture-in-Picture"] floating enable
+
+### Keybinds
+bindsym $mod+Return exec $terminal
+bindsym $mod+q kill
+bindsym $mod+m exec pkill wlogout || wlogout -b 5
+bindsym $mod+n exec $fileManager
+bindsym $mod+e exec $editor
+bindsym $mod+b exec $browser
+bindsym $mod+r exec $menu
+
+### Floating toggle
+bindsym $mod+v floating toggle
+
+### Fullscreen
+bindsym $mod+f fullscreen
+
+### Focus movement
+bindsym $mod+Left focus left
+bindsym $mod+Right focus right
+bindsym $mod+Up focus up
+bindsym $mod+Down focus down
+
+### Move windows
+bindsym $mod+Shift+Left move left
+bindsym $mod+Shift+Right move right
+bindsym $mod+Shift+Up move up
+bindsym $mod+Shift+Down move down
+
+### Resize mode
+mode "resize" {
+    bindsym Left resize shrink width 40px
+    bindsym Right resize grow width 40px
+    bindsym Up resize shrink height 20px
+    bindsym Down resize grow height 20px
+    bindsym Return mode "default"
+    bindsym Escape mode "default"
+}
+
+bindsym $mod+Alt+r mode "resize"
+
+### Workspaces
+bindsym $mod+1 workspace 1
+bindsym $mod+2 workspace 2
+bindsym $mod+3 workspace 3
+bindsym $mod+4 workspace 4
+bindsym $mod+5 workspace 5
+bindsym $mod+6 workspace 6
+bindsym $mod+7 workspace 7
+bindsym $mod+8 workspace 8
+bindsym $mod+9 workspace 9
+bindsym $mod+0 workspace 10
+
+### Move container to workspace
+bindsym $mod+Shift+1 move container to workspace 1
+bindsym $mod+Shift+2 move container to workspace 2
+bindsym $mod+Shift+3 move container to workspace 3
+bindsym $mod+Shift+4 move container to workspace 4
+bindsym $mod+Shift+5 move container to workspace 5
+bindsym $mod+Shift+6 move container to workspace 6
+bindsym $mod+Shift+7 move container to workspace 7
+bindsym $mod+Shift+8 move container to workspace 8
+bindsym $mod+Shift+9 move container to workspace 9
+bindsym $mod+Shift+0 move container to workspace 10
+
+### Clipboard menu
+bindsym Ctrl+$mod+v exec cliphist list | wofi --dmenu | cliphist decode | wl-copy
+
+### Lock screen
+bindsym $mod+l exec swaylock
+
+### Screenshot
+bindsym Print exec grim
+bindsym Ctrl+Print exec grim -g "$(slurp)"
+bindsym Shift+Print exec grim -g "$(slurp)" -t png
+
+### Audio
+bindsym Ctrl+Shift+F4 exec wpctl set-volume -l 1 @DEFAULT_AUDIO_SINK@ 5%+
+bindsym Ctrl+Shift+F1 exec wpctl set-volume @DEFAULT_AUDIO_SINK@ 5%-
+bindsym Ctrl+Shift+F2 exec wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle
+bindsym Ctrl+Shift+F3 exec wpctl set-mute @DEFAULT_AUDIO_SOURCE@ toggle
+
+### Media
+bindsym Ctrl+Shift+F8 exec playerctl next
+bindsym Ctrl+Shift+F6 exec playerctl play-pause
+bindsym Ctrl+Shift+F5 exec playerctl previous
+
+### Waybar reload
+bindsym $mod+Shift+p exec pkill waybar || waybar
+
+### Notifications
+bindsym $mod+Ctrl+p exec swaync-client -rs
+bindsym $mod+Ctrl+o exec swaync-client -R
